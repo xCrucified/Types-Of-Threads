@@ -12,7 +12,7 @@ namespace ConsoleApp2
 
         static void Main(string[] args)
         {
-            AutoResetEvent are = new AutoResetEvent(true); // initialState - is signaled state (free), false by default
+            AutoResetEvent are = new AutoResetEvent(true);
 
             ThreadPool.QueueUserWorkItem(GenerateAPair, are);
 
